@@ -1,0 +1,156 @@
+
+.wrapper{
+    background-color: lightgray;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.row{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image{
+    background-image: url("Images/back2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+img{
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+   
+}
+
+.text{
+    position: relative;
+    top: 50%;
+    right: -310px;
+    opacity: .5;
+    transform: translate(-50%,-50%);
+}
+.text p{
+    color:rgb(248, 248, 248);
+    font-size: 50px;
+
+}
+i{
+    font-weight: 400;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+}
+.input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 30px;
+}
+.input-field{
+display: flex;
+flex-direction: column;
+position: relative;
+padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 15px;
+    color: #50515a;
+}
+.input-field .input:focus,input:valid{
+    border-bottom: 1px solid rgba(117, 36, 117, 0.897); 
+}
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: black;
+    border-radius:5px ;
+    transition: .4s;
+    color: #fff;
+}
+.submit:hover{
+    background-color: rgb(60, 164, 250);
+    color: #fff;
+    font-size: larger;
+}
+.signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+
+}
+.span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    transition: .5s;
+}
+.span a:hover{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-widht:768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+    }
+    img{
+        width: 35px;
+        position: relative;
+        top: 20px;
+        left: 47%;
+    }
+    .text{
+        position: relative;
+        top: 70px;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }
+    .row{
+        max-width: 420;
+        width: 100%;
+    }
+}
